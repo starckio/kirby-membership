@@ -1,0 +1,21 @@
+title: Account
+pages:
+  build:
+    - title: Delete
+      uid: delete
+      template: delete
+    - title: Password
+      uid: password
+      template: password
+    - title: Register
+      uid: register
+      template: register
+    - title: Reset
+      uid: reset
+      template: reset
+deletable: false
+files: false
+fields:
+  title:
+    label: Page
+    type:  text

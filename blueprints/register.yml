@@ -1,0 +1,8 @@
+title: Register
+pages: false
+deletable: false
+files: false
+fields:
+  title:
+    label: Page
+    type:  text
