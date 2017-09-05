@@ -8,7 +8,7 @@ Permet l'enregistrement d'utilisateur pour votre site web
 
 Utilisez l'une des alternatives ci-dessous.
 
-### 1. Clone or download
+### 1. Clone ou téléchargement
 
 1. [Clone](https://github.com/starckio/kirby-membership.git) ou [télécharger](https://github.com/starckio/kirby-membership/archive/master.zip) ce dépôt.
 2. Décompressez les archives si nécessaire et renommez le dossier en `membership`.
@@ -32,8 +32,8 @@ $ git submodule add https://github.com/starckio/kirby-membership site/plugins/me
 
 ### 1. Pages
 
-Rendez-vous dans le panel de Kirby puis créer une page `Login`.
-Une fois faite, créer une deuxième page `Account`.
+Rendez-vous dans le panel de Kirby puis créer une page `Login` avec comme template: `Login`.
+Une fois faite, créer une deuxième page `Account` avec comme template: `Account`.
 Les sous-page seront automatiquement ajouté. 
 
 ## Utilisation
@@ -43,17 +43,17 @@ Pour profiter des liens, ajouter simplement ce code dans votre menu:
 ```php
 <?php if($user = $site->user()): ?>
 
-	<?php if($user->hasPanelAccess()): ?>
-	<li><a href="<?= url('panel') ?>">Panel</a></li>
-	<?php endif ?>
+    <?php if($user->hasPanelAccess()): ?>
+    <li><a href="<?= url('panel') ?>">Panel</a></li>
+    <?php endif ?>
 
-	<li><a<?php e($pages->find('account')->isOpen(), ' class="active"') ?>  href="<?= url('account') ?>">Account</a></li>
-	<li><a href="<?= url('logout') ?>">Logout</a></li>
+    <li><a<?php e($pages->find('account')->isOpen(), ' class="active"') ?>  href="<?= url('account') ?>">Account</a></li>
+    <li><a href="<?= url('logout') ?>">Logout</a></li>
 
 <?php else: ?>
 
-	<li>	<a<?php e($pages->find('login')->isOpen(), ' class="active"') ?>  href="<?= url('login') ?>">Login</a></li>
-	<li><a<?php e($pages->find('account/register')->isOpen(), ' class="active"') ?>  href="<?= url('account/register') ?>">Register</a></li>
+    <li><a<?php e($pages->find('login')->isOpen(), ' class="active"') ?>  href="<?= url('login') ?>">Login</a></li>
+    <li><a<?php e($pages->find('account/register')->isOpen(), ' class="active"') ?>  href="<?= url('account/register') ?>">Register</a></li>
 
 <?php endif ?>
 ```
