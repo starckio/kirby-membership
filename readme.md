@@ -32,9 +32,11 @@ $ git submodule add https://github.com/starckio/kirby-membership site/plugins/me
 
 ### 1. Pages
 
-Rendez-vous dans le panel de Kirby puis créer une page `Login` avec comme template: `Login`.
-Une fois faite, créer une deuxième page `Account` avec comme template: `Account`.
-Les sous-page seront automatiquement ajouté. 
+Rendez-vous dans le panel de Kirby puis créer les pages suivante:
+- `Login` avec comme template: `Login`.
+- `Account` avec comme template: `Account`.
+
+Les sous-page (Delete, Password, Register et Reset) seront automatiquement ajouté. 
 
 ## Utilisation
 
