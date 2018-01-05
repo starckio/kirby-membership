@@ -89,3 +89,6 @@ Ce plugin est fourni "tel quel" sans garantie. Utilisez-le à vos propres risque
 
 - [Mailgun](https://github.com/mailgun/transactional-email-templates) pour le template des emails.
 - [Ce post sur le forum](https://forum.getkirby.com/t/lost-password-plugin/7574/5?u=starckio) qui à permis le développement rapid de ce plugin.
+
+## Leave a donation to thank me (Bitcoin/Altcoin)
+- <https://www.starck.io/donate>
